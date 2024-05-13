@@ -55,9 +55,9 @@ const Hero = () => {
           className="text-3xl md:text-4xl text-center "
         />
         <p className="text-xl sm:text-2xl sm:w-6/12 mx-3 text-center my-4">
-          A passionate Full-Stack Developer with 1+ years of
-          experience, I bridge the gap between creativity and functionality by
-          crafting beautiful and functional web and mobile applications.
+          A passionate Full-Stack Developer with 1+ years of experience, I
+          bridge the gap between creativity and functionality by crafting
+          beautiful and functional web and mobile applications.
         </p>
         <div className="flex items-center gap-3 z-40">
           <Link href="#Projects">
@@ -66,7 +66,7 @@ const Hero = () => {
             </button>
           </Link>
           <Link
-            href="https://drive.google.com/file/d/13E8JpEmikpFL6ldLTfOWw03_A9b0hXsm/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Zio3dZXxgBU5uJ9k6I1itrSNIyJBTLZ2/view?usp=sharing"
             target="_blank"
           >
             <button className="btn-bordered">
