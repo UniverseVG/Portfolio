@@ -1,28 +1,17 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/JellYouness/portfolio-v2/blob/master/assets/Logo.png" width="100" />
-</div>
+
 <h1 align="center">
-  jellyouness.me - v2 
+  To run the project, follow below steps
 </h1>
-<p align="center">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/JellYouness/portfolio-v2">
-</p>
-<p align="center">
-  Previous versions:
-  <a href="https://jellyouness.vercel.app" target="_blank">v1</a>
-</p>
-
-![demo](https://github.com/JellYouness/portfolio-v2/blob/master/public/images/projects/portfolio-v2.png)
-
-Yes, you can fork this repo. Please give me proper credit by linking back to [jellyouness.me](https://jellyouness.me). Thanks!
+</div>
 
 ## 🛠 Installation & Set Up.
 
 1. Install the pnpm:
 
-```sh
-  npm install -g pnpm
-```
+   ```sh
+   npm install -g pnpm
+   ```
 
 2. Install dependencies
 

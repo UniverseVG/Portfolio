@@ -12,15 +12,15 @@ import Link from "next/link";
 
 const socials = [
   {
-    link: "https://github.com/JellYouness",
+    link: "https://github.com/UniverseVG",
     icon: <GitHub className="text-3xl" />,
   },
   {
-    link: "https://www.linkedin.com/in/youness-jellouli/",
+    link: "https://www.linkedin.com/in/varun-gm-86694a1a4/",
     icon: <LinkedIn className="text-3xl" />,
   },
   {
-    link: "https://www.instagram.com/yns_jell/",
+    link: "https://www.instagram.com/varungm24/",
     icon: <Instagram className="text-3xl" />,
   },
 ];

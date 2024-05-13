@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
 import Logo from "@/assets/Logo.png";
+import Logo_dark from "@/assets/Logo_dark.png";
 import { Menu, Close } from "@mui/icons-material";
 import ThemeButton from "./ThemeButton";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Link from "next/link";
+import { useTheme } from "next-themes";
 
 const navElements = [
   "Home",
@@ -18,11 +20,19 @@ const navElements = [
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
+  const { systemTheme, theme } = useTheme();
+  const themeLogo = () => {
+    if (theme === "system") {
+      return systemTheme === "dark" ? Logo : Logo_dark;
+    }
+    return theme === "dark" ? Logo : Logo_dark;
+  };
+
   return (
     <nav className="bg-white dark:bg-gray-900 fixed top-0 w-full z-50 flex justify-between items-center py-4 px-5 lg:px-14 xl:px-32 border-b-2 border-primary-main">
       <div className="flex items-center gap-3">
         <Image
-          src={Logo}
+          src={themeLogo()}
           alt="VARUN G M"
           quality={100}
           placeholder="blur"

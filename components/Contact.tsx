@@ -12,6 +12,8 @@ import {
 } from "@mui/icons-material";
 import Link from "next/link";
 import SlideUp from "@/utils/SlideUp";
+import Image from "next/image";
+import loader from "@/public/images/loader.svg";
 
 const socials = [
   {
@@ -60,7 +62,6 @@ const Contact = () => {
   };
 
   const sendEmail = (e: any) => {
-    console.log(form.current);
     form.current &&
       emailjs
         .sendForm(
@@ -153,18 +154,30 @@ const Contact = () => {
                   <p className="text-red-500">{`${errors.message.message}`}</p>
                 )}
                 {isSent && (
-                  <div className="bg-[#D4EDDA] text-[#558B7A] rounded-lg py-3 px-3">
+                  <div className="bg-[#D4EDDA] text-[#558B7A] rounded-lg py-6 px-3 mb-4">
                     <CheckCircleOutline /> Your Message has been sent.
                   </div>
                 )}
-                <div className="text-left lg:text-start">
+                <div className="text-left lg:text-start mt-4">
                   <button
                     id="submit-btn"
                     disabled={isSubmitting}
                     type="submit"
                     className="btn"
                   >
-                    Send
+                    {isSubmitting ? (
+                      <div className="flex items-center justify-center gap-2">
+                        <Image
+                          src={loader}
+                          alt="loader"
+                          loading="lazy"
+                          className="w-full h-8 hover:bg-black"
+                        />
+                        <p>Sending</p>
+                      </div>
+                    ) : (
+                      "Send"
+                    )}
                   </button>
                 </div>
               </div>
